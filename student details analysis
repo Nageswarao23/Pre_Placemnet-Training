@@ -13,7 +13,7 @@ for i in students:
     
 students.sort(key=lambda x:x["percentage"],reverse=True)
 
-pos=["First","Second","Third","Fourth","Fivth"]
+pos=["First","Second","Third","Fourth","Fifth"]
 j=0 
 for i in students:
     print("position {}  name {}  dept {}  marks {}  percentage {} ".format(pos[j], i["name"], i["dept"], i["marks"], i["percentage"]))
