@@ -1,0 +1,39 @@
+def circle():
+    radius = 4
+    area = 3.14*radius**2
+    print(area)
+
+def square(a):
+    area=a**2
+    print(area)
+
+def rectangle():
+    l=int(input("enter the length"))
+    b=int(input("enter the breadth"))
+    area=l*b
+    return area
+
+def triangle(base,height):
+    area=1/2*base*height
+    return area
+    
+while(True):
+    print("1.CIRCLE")
+    print("2.SQUARE")
+    print("3.RECTANGLE")
+    print("4.TRIANGLE")
+    ch=input("Enter your choice")
+    match ch:
+        case 1:
+            circle()
+        case 2:
+            a=int(input("enter length of square:"))
+            square()
+        case 3:
+            rectangle()
+        case 4:
+            base=input("enter the base of the triangle:")
+            height=input("enter the height of the triangle:")
+            print(triangle(base,height))
+        case _:
+            break
