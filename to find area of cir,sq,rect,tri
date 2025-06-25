@@ -22,18 +22,18 @@ while(True):
     print("2.SQUARE")
     print("3.RECTANGLE")
     print("4.TRIANGLE")
-    ch=input("Enter your choice")
+    ch=int(input("Enter your choice"))
     match ch:
         case 1:
             circle()
         case 2:
-            a=int(input("enter length of square:"))
-            square()
+            a=int(input("enter the length of square:"))
+            square(a)
         case 3:
-            rectangle()
+            print(rectangle())
         case 4:
-            base=input("enter the base of the triangle:")
-            height=input("enter the height of the triangle:")
+            base=int(input("enter the base of the triangle:"))
+            height=int(input("enter the height of the triangle:"))
             print(triangle(base,height))
         case _:
             break
